@@ -1,0 +1,7 @@
+print("hello world!")
+x = "hello world!"
+hello = "Hello"
+world = "world!"
+whatUp = "Whazzaaa"
+Print(hello)
+
