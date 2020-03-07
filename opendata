@@ -1,0 +1,169 @@
+x = 42
+y = 2
+Print(x,y)
+z= x + Y
+
+x=42
+y=2 
+a=x-y
+b=x*y
+c=x/y
+d=x**y
+e=x//y
+g = a*b+c-d
+print(x,y,a,b,c,d,e)
+print(g)
+
+hello = "hello"
+world = "world"
+helloworld = hello + world
+firstthree =helloworld[0:3] 
+print (firstthree)
+
+hello = "hello"
+world = "world"
+helloworld = hello + world
+firstthree =helloworld[-3:] 
+newVariable = "Good Bye" + helloworld[6:]
+print (newVariable)
+
+x = True
+y = False
+z = 42 > 2
+print(z)
+
+
+x = True
+y = False
+z = 42 > 2
+a = 42 < 2
+b = 42 >= 2
+C = 42 <= 2 
+d = 42 == 2
+e 42 != 2
+print( z,a,b,c,d,e)
+
+
+z = 42 > 2
+a = 42 < 2
+b = 42 >= 2
+c = 42 <= 2 
+d = 42 == 2
+e = 42 != 2
+f = 42 > 2 or 42 > -1
+print( z,a,b,c,d,e,f)
+
+
+z = 42 > 2
+a = 42 < 2
+b = 42 >= 2
+c = 42 <= 2 
+d = 42 == 2
+e = 42 != 2
+f = not 42 < -1
+print( z,a,b,c,d,e,f)
+
+x = [10, 20, 30, 40, 50]
+y = ["Why", "wear","tuque","eh?"]
+print(x[0])
+
+x = [10, 20, 30, 40, 50]
+y = ["Why", "wear","tuque","eh?"]
+x[1] = 100
+print(x[1])
+
+x = [10, 20, 30, 40, 50]
+y = ["Why", "wear","tuque","eh?"]
+x[1] = 100
+z = 10 in x
+
+print(z)
+
+
+x = 42
+y = 2
+if x > y:
+  print ("Congratulations, X is bigger")
+  
+  x = 1
+y = 2
+if x > y:
+  print ("Congratulations, X is bigger")
+else:
+  print ("Nope, this is smaller")
+  
+  x = 1
+y = 2
+if x > y:
+  print ("Congratulations, X is bigger")
+  z = x + y
+elif x < 0:
+  print("oh, but x is the less that zero")
+else:
+  print ("Nope, this is smaller")
+
+print ("things and stuff")
+
+x = 1
+y = 10
+while x < y:
+  print(x)
+  x = x + 1
+  
+  x = 1
+y = 10
+while x < y:
+  print(x)
+
+a = ["why","wear","tuque","eh"]
+for x in a:
+  print(x)
+  
+  a = ["why","wear","tuque","eh"]
+b = a[1:]
+for x in b:
+  print(x)
+  
+  def fibonacci(n):
+  a = 0
+  b = 1
+  while a < n:
+    print(a)
+    c = a
+    a = b
+    b = c + b
+fibonacci(100)
+print("stuff")
+fibonacci(20)
+
+
+import csv
+import urllib.request
+from io import StringIO
+url = 'https://data.edmonton.ca/api/views/rjcz-ibuw/rows.csv?accessType=DOWNLOAD'
+
+
+import csv
+import urllib.request
+from io import StringIO
+url = 'https://data.edmonton.ca/api/views/rjcz-ibuw/rows.csv?accessType=DOWNLOAD'
+response = urllib.request.urlopen(url)
+csvtext =response.read().decode()
+file =stringIO(csvtext)
+csvfile = csv.reader(file)
+for line in csvfile:
+  print
+  
+  
+  import csv
+import urllib.request
+from io import StringIO
+url = 'https://data.edmonton.ca/api/views/rjcz-ibuw/rows.csv?accessType=DOWNLOAD'
+response = urllib.request.urlopen(url)
+csvtext =response.read().decode()
+file =StringIO(csvtext)
+csvfile = csv.reader(file)
+
+for line in csvfile:
+  if line[4] == "Arena":
+  print (line[0])
